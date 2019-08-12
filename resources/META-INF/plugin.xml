@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.test.zoo.ZookeeperCli.joker.hu</id>
+    <name>zookeeper visual</name>
+    <version>1.0</version>
+    <vendor email="joker-hu@outlook.com" url="http://www.baidu.com">去百度吧</vendor>
+
+    <description>简单连接zookeeper的客户端，目前支持查看所有的目录。右键可以复制选中的目录。这是我的email:joker-hu@outlook.com。欢迎交流学习。</description>
+
+    <change-notes>这是第一次开发IDEA插件，先做个小功能试试，应为下载IDEA官方的zookeeper插件用不了，所以就自己做了一个。</change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <toolWindow id="Zookeeper Visual" secondary="true" anchor="right"
+                    factoryClass="com.test.zoo.ZookeeperCliFactory"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+
+    </actions>
+
+</idea-plugin>
